@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Jan  1 21:36:17 2023
+# Process ID: 4964
+# Current directory: C:/Proyectos_sed/refrescos/refrescos.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Proyectos_sed/refrescos/refrescos.runs/synth_1/top.vds
+# Journal file: C:/Proyectos_sed/refrescos/refrescos.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
