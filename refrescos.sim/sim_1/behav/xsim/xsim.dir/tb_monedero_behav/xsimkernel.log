@@ -1,7 +1,7 @@
-Running: xsim.dir/tb_monedero_behav/xsimk.exe -simmode gui -wdb tb_monedero_behav.wdb -simrunnum 0 -socket 63460
+Running: xsim.dir/tb_monedero_behav/xsimk.exe -simmode gui -wdb tb_monedero_behav.wdb -simrunnum 0 -socket 56433
 Design successfully loaded
-Design Loading Memory Usage: 7364 KB (Peak: 7364 KB)
-Design Loading CPU Usage: 46 ms
+Design Loading Memory Usage: 7356 KB (Peak: 7356 KB)
+Design Loading CPU Usage: 0 ms
 Simulation completed
-Simulation Memory Usage: 7924 KB (Peak: 7924 KB)
-Simulation CPU Usage: 46 ms
+Simulation Memory Usage: 7912 KB (Peak: 7912 KB)
+Simulation CPU Usage: 0 ms

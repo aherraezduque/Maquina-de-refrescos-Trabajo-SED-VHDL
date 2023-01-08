@@ -1,4 +1,4 @@
 Time resolution is 1 ps
 Failure: Simulacion finalizada. Test superado.
-Time: 280 ns  Iteration: 0  Process: /tb_fsm/stimuli  File: C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sim_1/new/tb_fsm.vhd
-$finish called at time : 280 ns : File "C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sim_1/new/tb_fsm.vhd" Line 189
+Time: 5242880 ns  Iteration: 0  Process: /tb_MUXED_DISPLAY/stimuli  File: C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sim_1/new/tb_MUXED_DISPLAY.vhd
+$finish called at time : 5242880 ns : File "C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sim_1/new/tb_MUXED_DISPLAY.vhd" Line 88

@@ -48,7 +48,7 @@ architecture tb of tb_MUXED_DISPLAY is
               ( digito3_vt=>"0000001", digito2_vt=>"1001111", digito1_vt=>"0000001", digito0_vt=>"0000001", digselector_vt=>"1101", segmentos_ilum_vt =>"0000001" ),      --100     --1 
               ( digito3_vt=>"0000001", digito2_vt=>"1001111", digito1_vt=>"0000001", digito0_vt=>"0000001", digselector_vt=>"1110", segmentos_ilum_vt =>"0000001" )       --100     --0
               );
-    constant tasa_refresco: time := 10ns * 2**16;
+    constant tasa_refresco: time := 10ns * 2**16;        --Cuando se producirán cambios
 begin
 
     dut : MUXED_DISPLAY

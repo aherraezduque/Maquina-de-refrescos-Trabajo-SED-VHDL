@@ -139,51 +139,51 @@ state_register: PROCESS (RESET, CLK)                                --Process de
  
 nextstate_decod: PROCESS (CLK, current_state, SELECTOR )             --Process destinado a actualizar el valor 
         begin
-            next_state <= current_state;
-            
-            case current_state is
-                                                            --INICIO TO DINERO
-            when Inicio =>
-            producto_adquirido <='0';
-            if ((p10C OR p20C OR p50C OR p1_euro) ='1') then 
-                next_state <= Dinero;
+            next_state <= current_state;                    --Por defecto se pasa el valor del estado actual al 
+                                                            --siguiente estado en caso de que no se produzcan cambios
+            case current_state is                           --DEPENDIENDO DEL ESTADO ACTUAL, el siguiente estado tomar� un valor
+                                                            
+            when Inicio =>                                  --INICIO TO DINERO
+            producto_adquirido <='0';                       --al entrar en inicio producto_adquirido debe tomar el valor 0
+            if ((p10C OR p20C OR p50C OR p1_euro) ='1') then --Si se pulsa uno de los botones estanto en Inicio
+                next_state <= Dinero;                        --el siguiente estado pasa a ser Dinero
             end if;
             
-                                                            --DINERO TO DINERO OR DINERO TO UN_EURO
+                                                            --DINERO TO DINERO OR DINERO TO DEVOLUCION OR DINERO TO UN_EURO
             when Dinero =>                            
-            if (s_saldo < valor_productos_fsm1) then           --Saldo menor que valor maximo de producto que produce devolucion
-                next_state <= Dinero;
+            if (s_saldo < valor_productos_fsm1) then        --Saldo menor que valor maximo de producto que produce devolucion
+                next_state <= Dinero;                       --permanece en Dinero
                 
-               if (s_aviso ='1')then 
-                next_state <= Devolucion;
+               if (s_aviso ='1')then                        --Si ha saltado el aviso de devolucion conectado al monedero
+                next_state <= Devolucion;                   --el siguiente estado pasa a ser Devolucion
                 end if;  
-                                                     --sigue ingresando monedas
-            elsif (s_saldo = valor_productos_fsm1)then         --Saldo = valor máximo de los productos       100                                                       
-                next_state <= Un_euro;                        --Va a alcanzar 1 euro en este ciclo
+                                                            --sigue ingresando monedas
+            elsif (s_saldo = valor_productos_fsm1)then      --Si el Saldo = valor maximo de los productos       100                                                       
+                next_state <= Un_euro;                      --Va a alcanzar 1 euro en este ciclo, pasa al estado Un_euro
                 
             end if;
             
             when Un_euro =>                                 --UN-EURO TO DEVOLUCION OR UN_EURO TO PRODUCTO
-            if (s_aviso ='1')then                               
-                next_state <= Devolucion; 
-            elsif( (to_integer(unsigned(SELECTOR)) > 0)) then      --Si escoge un producto, recibe PRODUCTO     
-                producto_adquirido<= '1';                                                        
-                next_state <= Producto;
+            if (s_aviso ='1')then                           --si ha seguido metiendo monedas y se pasa del valor, salta el aviso    
+                next_state <= Devolucion;                   --el siguiente estado ser� Devolucion
+            elsif( (to_integer(unsigned(SELECTOR)) > 0)) then --Si escoge un producto, recibe PRODUCTO (SELECTOR /= "0000")     
+                producto_adquirido<= '1';                     --producto adquirido toma el valor 1                                   
+                next_state <= Producto;                     --el siguiente estado pasa a ser Producto
             end if;
                 
             when Producto =>                                 --PRODUCTO TO INICIO   
-            if( (to_integer(unsigned(SELECTOR)) = 0)) then            --Si se bajan los selectores vuelve a INICIO  
-                producto_adquirido<= '1';
-                next_state <= Inicio;
+            if( (to_integer(unsigned(SELECTOR)) = 0)) then   --Si se bajan los selectores vuelve a INICIO (SELECTOR = "0000")   
+                producto_adquirido<= '1';                    --Se ha adquirido un producto    
+                next_state <= Inicio;                        --Regresa a Inicio
             end if;
             
-            when Devolucion =>
-            if ((p10C OR p20C OR p50C OR p1_euro OR p_rearme ) ='1') then
-                producto_adquirido<= '1';
-                next_state <= Inicio;
+            when Devolucion =>                               --DEVOLUCION TO INICIO
+            if ((p10C OR p20C OR p50C OR p1_euro OR p_rearme ) ='1') then-- al pulsar cualquiera de los botones 
+                producto_adquirido<= '1';                    --garantiza  0 en el monedero
+                next_state <= Inicio;                        -- el proximo estado pasa a ser Inicio
             end if;
             
-            when others =>
+            when others =>                                   --Se pone por defecto el estado de Inicio   
                 next_state <= Inicio;
             end case;
  END PROCESS;
@@ -206,9 +206,7 @@ output_decod: PROCESS (current_state)                       --Process destinado 
             if current_state = Producto then                --Si estado actual es <Producto>
                 LIGHT <= (others=>'0');                     --Los leds que avisan que los productos pueden ser adquiridos están apagados
                 LED_SALIDA_PRODUCTO<= '1';                  --El led que identifica que se ha comprado un producto se enciende
-                LED_ERROR <= '0';                           --El led que identifica que se ha producido una devolución está apagado
---            else                                            --Si no se encuentra en el estado de <Producto>
---                LED_SALIDA_PRODUCTO<= '0';                  --El led que identifica que se ha comprado un producto está apagado
+                LED_ERROR <= '0';                           --El led que identifica que se ha producido una devolución está apagado          
             end if; 
             
             if current_state = Inicio then                  --Si el estado actual es <Inicio>

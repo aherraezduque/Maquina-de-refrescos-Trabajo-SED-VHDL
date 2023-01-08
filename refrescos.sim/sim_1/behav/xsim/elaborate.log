@@ -1,7 +1,16 @@
 Vivado Simulator v2021.1
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto cb51ec278c4e4a50ad2f9b4b4ea4e38d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_fsm_behav xil_defaultlib.tb_fsm -log elaborate.log 
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto cb51ec278c4e4a50ad2f9b4b4ea4e38d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_MUXED_DISPLAY_behav xil_defaultlib.tb_MUXED_DISPLAY -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MUXED_DISPLAY [muxed_display_default]
+Compiling architecture tb of entity xil_defaultlib.tb_muxed_display
+Built simulation snapshot tb_MUXED_DISPLAY_behav

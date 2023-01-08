@@ -1,3 +1,4 @@
+
 library ieee;
 use ieee.std_logic_1164.all;
 use IEEE.NUMERIC_STD.ALL;
@@ -90,7 +91,7 @@ architecture tb of tb_fsm is
             SELECTOR_vt => "0000", LIGHT_vt => "0000", SALDO_vt => 100,  LED_SALIDA_PRODUCTO_vt => '0', LED_ERROR_vt => '0'), 
         (reset_vt => '1', p10C_vt => '0', p20C_vt => '0', p50C_vt => '0', p1_euro_vt => '0', p_rearme_vt => '0',                    --De <Dinero> paso a <Un_euro> 
             SELECTOR_vt => "0000", LIGHT_vt => "0000", SALDO_vt => 100,  LED_SALIDA_PRODUCTO_vt => '0', LED_ERROR_vt => '0'),
-        (reset_vt => '1', p10C_vt => '0', p20C_vt => '0', p50C_vt => '0', p1_euro_vt => '1', p_rearme_vt => '0',                    --Como estando en <Un_euro> me paso al meter otro euro, el saldo se hace 0
+        (reset_vt => '1', p10C_vt => '0', p20C_vt => '0', p50C_vt => '0', p1_euro_vt => '1', p_rearme_vt => '0',             --Como estando en <Un_euro> me paso al meter otro euro, el saldo se hace 0
             SELECTOR_vt => "0000", LIGHT_vt => "1111", SALDO_vt => 0,  LED_SALIDA_PRODUCTO_vt => '0', LED_ERROR_vt => '0'),         --Como estoy en <Un_euro> LIGHT se enciende   
         (reset_vt => '1', p10C_vt => '0', p20C_vt => '0', p50C_vt => '0', p1_euro_vt => '0', p_rearme_vt => '0',                    --He entrado en <Devolucion>
             SELECTOR_vt => "0000", LIGHT_vt => "0000", SALDO_vt => 0,  LED_SALIDA_PRODUCTO_vt => '0', LED_ERROR_vt => '1'),         --Se me enciende led error 

@@ -22,8 +22,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-
-
 entity top is
     Port (
         CLK : in std_logic;                                 --CLK   
@@ -39,8 +37,9 @@ entity top is
         LED_SALIDA_PRODUCTO: out std_logic;                 --Se enciende cuando sale el producto
         LED_ERROR: out std_logic;                           --Se enciende cuando se ha producido el error
         digselector: out std_logic_vector(3 downto 0);      --Selector del display que está encendido en cada instante
-        segmentos_ilum: out std_logic_vector(6 downto 0)    --Dígito expresado en el formato del display de 7segmento que se encontrará activo en el display seleccionado por 
-    );                                                     --digselector    
+        segmentos_ilum: out std_logic_vector(6 downto 0)    --Dígito expresado en el formato del display de 7segmento que se encontrará
+                                                            -- activo en el display seleccionado por --digselector 
+    );                                                        
 end top;
 
 architecture Estructural of top is

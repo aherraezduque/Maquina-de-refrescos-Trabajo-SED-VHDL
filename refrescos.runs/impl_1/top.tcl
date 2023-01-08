@@ -127,7 +127,6 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 2
-  set_param synth.incrementalSynthesisCache C:/Users/alvar/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1800-DESKTOP-76GMPL4/incrSyn
   open_checkpoint top_routed.dcp
   set_property webtalk.parent_dir {C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.cache/wt} [current_project]
 set_property TOP top [current_fileset]
