@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Jan  8 14:18:13 2023
+# Process ID: 2252
+# Current directory: C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.sim/sim_1/behav/xsim/xsim.dir/tb_fsm_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/alvar/Documents/GitHub/Maquina -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/Users/alvar/Documents/GitHub/Maquina" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Sun Jan  8 14:18:13 2023...

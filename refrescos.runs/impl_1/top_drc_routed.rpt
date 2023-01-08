@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Sun Jan  1 21:37:35 2023
+| Date         : Sun Jan  8 14:06:10 2023
 | Host         : DESKTOP-76GMPL4 running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
 | Design       : top
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 4
+             Violations found: 5
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153 | Warning  | Gated clock check                                   | 3          |
+| PDRC-153 | Warning  | Gated clock check                                   | 4          |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -49,17 +49,22 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net Inst_fsm/LED_ERROR_reg_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_fsm/LED_ERROR_reg_i_1/O, cell Inst_fsm/LED_ERROR_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net Inst_fsm/Inst_monedero/producto_adquirido__0 is a gated clock net sourced by a combinational pin Inst_fsm/Inst_monedero/producto_adquirido_reg_i_2/O, cell Inst_fsm/Inst_monedero/producto_adquirido_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net Inst_fsm/LIGHT_reg[0]_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_fsm/LIGHT_reg[0]_i_1/O, cell Inst_fsm/LIGHT_reg[0]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net Inst_fsm/LED_ERROR_reg/G0 is a gated clock net sourced by a combinational pin Inst_fsm/LED_ERROR_reg/L3_2/O, cell Inst_fsm/LED_ERROR_reg/L3_2 (in Inst_fsm/LED_ERROR_reg macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net Inst_fsm/producto_adquirido__0 is a gated clock net sourced by a combinational pin Inst_fsm/producto_adquirido_reg_i_2/O, cell Inst_fsm/producto_adquirido_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net Inst_fsm/LED_SALIDA_PRODUCTO_reg_i_2_n_0 is a gated clock net sourced by a combinational pin Inst_fsm/LED_SALIDA_PRODUCTO_reg_i_2/O, cell Inst_fsm/LED_SALIDA_PRODUCTO_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net Inst_fsm/LIGHT_reg[0]_i_1_n_0 is a gated clock net sourced by a combinational pin Inst_fsm/LIGHT_reg[0]_i_1/O, cell Inst_fsm/LIGHT_reg[0]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

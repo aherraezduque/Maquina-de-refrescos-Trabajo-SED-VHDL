@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Sun Jan  1 21:37:16 2023
+| Date         : Sun Jan  8 14:05:50 2023
 | Host         : DESKTOP-76GMPL4 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    11 |
-|    Minimum number of control sets                        |    11 |
+| Total control sets                                       |    12 |
+|    Minimum number of control sets                        |    12 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    58 |
+| Unused register locations in slices containing registers |    57 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,8 +39,8 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    11 |
-| >= 0 to < 4        |     3 |
+| Total control sets |    12 |
+| >= 0 to < 4        |     4 |
 | >= 4 to < 6        |     1 |
 | >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     0 |
@@ -58,9 +58,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              42 |           17 |
-| No           | No                    | Yes                    |              58 |           19 |
-| No           | Yes                   | No                     |               6 |            3 |
+| No           | No                    | No                     |              42 |           19 |
+| No           | No                    | Yes                    |              59 |           23 |
+| No           | Yes                   | No                     |               6 |            4 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |             100 |           25 |
@@ -70,20 +70,21 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------------+--------------------------------+---------------------------------------------+------------------+----------------+--------------+
-|           Clock Signal          |          Enable Signal         |               Set/Reset Signal              | Slice Load Count | Bel Load Count | Bels / Slice |
-+---------------------------------+--------------------------------+---------------------------------------------+------------------+----------------+--------------+
-|  Inst_fsm/LIGHT_reg[0]_i_1_n_0  |                                | Inst_fsm/LIGHT_reg[0]_i_2_n_0               |                1 |              1 |         1.00 |
-|  Inst_fsm/producto_adquirido__0 |                                |                                             |                1 |              1 |         1.00 |
-|  Inst_fsm/LED_ERROR_reg_i_1_n_0 |                                | Inst_fsm/LED_ERROR_reg_i_2_n_0              |                1 |              1 |         1.00 |
-|  CLK_IBUF_BUFG                  |                                | Inst_bcd_decoder/digito3_reg[6]_0           |                1 |              4 |         4.00 |
-|  CLK_IBUF_BUFG                  | Inst_debouncer_p1_euro/count0  | Inst_debouncer_p1_euro/count[0]_i_1__2_n_0  |                5 |             20 |         4.00 |
-|  CLK_IBUF_BUFG                  | Inst_debouncer_p20c/count0     | Inst_debouncer_p20c/count[0]_i_1__0_n_0     |                5 |             20 |         4.00 |
-|  CLK_IBUF_BUFG                  | Inst_debouncer_p50c/count0     | Inst_debouncer_p50c/count[0]_i_1__1_n_0     |                5 |             20 |         4.00 |
-|  CLK_IBUF_BUFG                  | Inst_debouncer_p_rearme/count0 | Inst_debouncer_p_rearme/count[0]_i_1__3_n_0 |                5 |             20 |         4.00 |
-|  CLK_IBUF_BUFG                  | Inst_debouncer_p10c/count0     | Inst_debouncer_p10c/count[0]_i_1_n_0        |                5 |             20 |         4.00 |
-|  CLK_IBUF_BUFG                  |                                |                                             |               16 |             46 |         2.88 |
-|  CLK_IBUF_BUFG                  |                                | Inst_fsm/Inst_monedero/RESET                |               19 |             58 |         3.05 |
-+---------------------------------+--------------------------------+---------------------------------------------+------------------+----------------+--------------+
++-----------------------------------------------+--------------------------------+---------------------------------------------+------------------+----------------+--------------+
+|                  Clock Signal                 |          Enable Signal         |               Set/Reset Signal              | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------------------+--------------------------------+---------------------------------------------+------------------+----------------+--------------+
+|  Inst_fsm/LED_ERROR_reg/G0                    |                                |                                             |                1 |              1 |         1.00 |
+|  Inst_fsm/Inst_monedero/producto_adquirido__0 |                                |                                             |                1 |              1 |         1.00 |
+|  Inst_fsm/LED_SALIDA_PRODUCTO_reg_i_2_n_0     |                                | Inst_fsm/LED_SALIDA_PRODUCTO_reg_i_3_n_0    |                1 |              1 |         1.00 |
+|  Inst_fsm/LIGHT_reg[0]_i_1_n_0                |                                | Inst_fsm/LIGHT_reg[0]_i_2_n_0               |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                                |                                | Inst_bcd_decoder/digito3_reg[6]_0           |                2 |              4 |         2.00 |
+|  CLK_IBUF_BUFG                                | Inst_debouncer_p1_euro/count0  | Inst_debouncer_p1_euro/count[0]_i_1__2_n_0  |                5 |             20 |         4.00 |
+|  CLK_IBUF_BUFG                                | Inst_debouncer_p20c/count0     | Inst_debouncer_p20c/count[0]_i_1__0_n_0     |                5 |             20 |         4.00 |
+|  CLK_IBUF_BUFG                                | Inst_debouncer_p50c/count0     | Inst_debouncer_p50c/count[0]_i_1__1_n_0     |                5 |             20 |         4.00 |
+|  CLK_IBUF_BUFG                                | Inst_debouncer_p_rearme/count0 | Inst_debouncer_p_rearme/count[0]_i_1__3_n_0 |                5 |             20 |         4.00 |
+|  CLK_IBUF_BUFG                                | Inst_debouncer_p10c/count0     | Inst_debouncer_p10c/count[0]_i_1_n_0        |                5 |             20 |         4.00 |
+|  CLK_IBUF_BUFG                                |                                |                                             |               17 |             45 |         2.65 |
+|  CLK_IBUF_BUFG                                |                                | Inst_fsm/Inst_monedero/RESET                |               23 |             59 |         2.57 |
++-----------------------------------------------+--------------------------------+---------------------------------------------+------------------+----------------+--------------+
 
 

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_fsm_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_fsm" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="280.001 ns"></ZoomEndTime>
+      <Cursor1Time time="280.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="158"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/tb_fsm/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm/p10C" type="logic">
+      <obj_property name="ElementShortName">p10C</obj_property>
+      <obj_property name="ObjectShortName">p10C</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm/p20C" type="logic">
+      <obj_property name="ElementShortName">p20C</obj_property>
+      <obj_property name="ObjectShortName">p20C</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm/p50C" type="logic">
+      <obj_property name="ElementShortName">p50C</obj_property>
+      <obj_property name="ObjectShortName">p50C</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm/p1_euro" type="logic">
+      <obj_property name="ElementShortName">p1_euro</obj_property>
+      <obj_property name="ObjectShortName">p1_euro</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm/p_rearme" type="logic">
+      <obj_property name="ElementShortName">p_rearme</obj_property>
+      <obj_property name="ObjectShortName">p_rearme</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm/SELECTOR" type="array">
+      <obj_property name="ElementShortName">SELECTOR[0:3]</obj_property>
+      <obj_property name="ObjectShortName">SELECTOR[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm/LIGHT" type="array">
+      <obj_property name="ElementShortName">LIGHT[0:3]</obj_property>
+      <obj_property name="ObjectShortName">LIGHT[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm/SALDO" type="other">
+      <obj_property name="ElementShortName">SALDO</obj_property>
+      <obj_property name="ObjectShortName">SALDO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm/LED_SALIDA_PRODUCTO" type="logic">
+      <obj_property name="ElementShortName">LED_SALIDA_PRODUCTO</obj_property>
+      <obj_property name="ObjectShortName">LED_SALIDA_PRODUCTO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm/LED_ERROR" type="logic">
+      <obj_property name="ElementShortName">LED_ERROR</obj_property>
+      <obj_property name="ObjectShortName">LED_ERROR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm/TbPeriod" type="other">
+      <obj_property name="ElementShortName">TbPeriod</obj_property>
+      <obj_property name="ObjectShortName">TbPeriod</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm/numero_de_productos_fsm_const" type="other">
+      <obj_property name="ElementShortName">numero_de_productos_fsm_const</obj_property>
+      <obj_property name="ObjectShortName">numero_de_productos_fsm_const</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm/test" type="array">
+      <obj_property name="ElementShortName">test[0:27]</obj_property>
+      <obj_property name="ObjectShortName">test[0:27]</obj_property>
+   </wvobject>
+</wave_config>

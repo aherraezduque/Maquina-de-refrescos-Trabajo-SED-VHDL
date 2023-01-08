@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Sun Jan  1 21:37:36 2023
+| Date         : Sun Jan  8 14:06:10 2023
 | Host         : DESKTOP-76GMPL4 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 213
+             Violations found: 216
 +-----------+------------------+------------------------------+------------+
 | Rule      | Severity         | Description                  | Violations |
 +-----------+------------------+------------------------------+------------+
 | TIMING-17 | Critical Warning | Non-clocked sequential cell  | 208        |
-| LUTAR-1   | Warning          | LUT drives async reset alert | 2          |
-| TIMING-20 | Warning          | Non-clocked latch            | 3          |
+| LUTAR-1   | Warning          | LUT drives async reset alert | 4          |
+| TIMING-20 | Warning          | Non-clocked latch            | 4          |
 +-----------+------------------+------------------------------+------------+
 
 2. REPORT DETAILS
@@ -1076,25 +1076,40 @@ Related violations: <none>
 
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell Inst_fsm/LED_ERROR_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Inst_fsm/LED_ERROR_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Inst_fsm/LED_ERROR_reg_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Inst_fsm/LED_ERROR_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell Inst_fsm/LED_ERROR_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Inst_fsm/LED_ERROR_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell Inst_fsm/LED_SALIDA_PRODUCTO_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) Inst_fsm/LED_SALIDA_PRODUCTO_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
 LUT drives async reset alert  
 LUT cell Inst_fsm/LIGHT_reg[0]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Inst_fsm/LIGHT_reg[0]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch Inst_fsm/LED_ERROR_reg cannot be properly analyzed as its control pin Inst_fsm/LED_ERROR_reg/G is not reached by a timing clock
+The latch Inst_fsm/LED_ERROR_reg/L7 (in Inst_fsm/LED_ERROR_reg macro) cannot be properly analyzed as its control pin Inst_fsm/LED_ERROR_reg/L7/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch Inst_fsm/LIGHT_reg[0] cannot be properly analyzed as its control pin Inst_fsm/LIGHT_reg[0]/G is not reached by a timing clock
+The latch Inst_fsm/LED_SALIDA_PRODUCTO_reg cannot be properly analyzed as its control pin Inst_fsm/LED_SALIDA_PRODUCTO_reg/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#3 Warning
+Non-clocked latch  
+The latch Inst_fsm/LIGHT_reg[0] cannot be properly analyzed as its control pin Inst_fsm/LIGHT_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
 Non-clocked latch  
 The latch Inst_fsm/producto_adquirido_reg cannot be properly analyzed as its control pin Inst_fsm/producto_adquirido_reg/G is not reached by a timing clock
 Related violations: <none>
