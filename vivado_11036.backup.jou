@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Jan 10 16:26:00 2023
+# Process ID: 11036
+# Current directory: C:/Users/alvar/Desktop/refrescos
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8520 C:\Users\alvar\Desktop\refrescos\refrescos.xpr
+# Log file: C:/Users/alvar/Desktop/refrescos/vivado.log
+# Journal file: C:/Users/alvar/Desktop/refrescos\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/alvar/Desktop/refrescos/refrescos.xpr
+launch_simulation
+source tb_MUXED_DISPLAY.tcl
+close_sim
+launch_simulation
+source tb_MUXED_DISPLAY.tcl
+run all
+close_sim
+launch_simulation
+source tb_MUXED_DISPLAY.tcl
+run all
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_fsm [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source tb_fsm.tcl
+relaunch_sim
+relaunch_sim
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_monedero [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation

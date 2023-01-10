@@ -1,0 +1,275 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Jan 10 16:54:30 2023
+# Process ID: 4456
+# Current directory: C:/Users/alvar/Desktop/refrescos
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5704 C:\Users\alvar\Desktop\refrescos\refrescos.xpr
+# Log file: C:/Users/alvar/Desktop/refrescos/vivado.log
+# Journal file: C:/Users/alvar/Desktop/refrescos\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/alvar/Desktop/refrescos/refrescos.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/alvar/Desktop/refrescos/refrescos.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_monedero'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_monedero' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_monedero_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_monedero'
+ERROR: [VRFC 10-3353] formal port 'producto_adquirido' has no actual or default value [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd:107]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd:37]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_monedero'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_monedero' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_monedero_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_monedero'
+ERROR: [VRFC 10-3353] formal port 'producto_adquirido' has no actual or default value [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd:107]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd:37]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_monedero'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_monedero' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_monedero_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_monedero'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+"xelab -wto cb51ec278c4e4a50ad2f9b4b4ea4e38d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_monedero_behav xil_defaultlib.tb_monedero -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto cb51ec278c4e4a50ad2f9b4b4ea4e38d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_monedero_behav xil_defaultlib.tb_monedero -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.monedero [monedero_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_monedero
+Built simulation snapshot tb_monedero_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim/xsim.dir/tb_monedero_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim/xsim.dir/tb_monedero_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Jan 10 16:57:24 2023. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2021.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Jan 10 16:57:24 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_monedero_behav -key {Behavioral:sim_1:Functional:tb_monedero} -tclbatch {tb_monedero.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_monedero.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1ms
+Failure: Simulacion finalizada. Test superado.
+Time: 19 us  Iteration: 0  Process: /tb_monedero/stimuli  File: C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd
+$finish called at time : 19 us : File "C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd" Line 141
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_monedero_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1ms
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1485.879 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1485.879 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_monedero'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_monedero' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_monedero_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_monedero'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+"xelab -wto cb51ec278c4e4a50ad2f9b4b4ea4e38d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_monedero_behav xil_defaultlib.tb_monedero -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto cb51ec278c4e4a50ad2f9b4b4ea4e38d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_monedero_behav xil_defaultlib.tb_monedero -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.monedero [monedero_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_monedero
+Built simulation snapshot tb_monedero_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_monedero_behav -key {Behavioral:sim_1:Functional:tb_monedero} -tclbatch {tb_monedero.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_monedero.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1ms
+Failure: Salida incorrecta -saldo
+Time: 20 us  Iteration: 0  Process: /tb_monedero/stimuli  File: C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd
+$finish called at time : 20 us : File "C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd" Line 134
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_monedero_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1ms
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_monedero'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_monedero' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_monedero_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_monedero'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+"xelab -wto cb51ec278c4e4a50ad2f9b4b4ea4e38d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_monedero_behav xil_defaultlib.tb_monedero -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto cb51ec278c4e4a50ad2f9b4b4ea4e38d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_monedero_behav xil_defaultlib.tb_monedero -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+Failure: Salida incorrecta -saldo
+Time: 20 us  Iteration: 0  Process: /tb_monedero/stimuli  File: C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd
+$finish called at time : 20 us : File "C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd" Line 134
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1485.879 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_monedero'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_monedero' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_monedero_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_monedero'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_monedero'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/alvar/Desktop/refrescos/refrescos.sim/sim_1/behav/xsim'
+"xelab -wto cb51ec278c4e4a50ad2f9b4b4ea4e38d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_monedero_behav xil_defaultlib.tb_monedero -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto cb51ec278c4e4a50ad2f9b4b4ea4e38d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_monedero_behav xil_defaultlib.tb_monedero -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.monedero [monedero_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_monedero
+Built simulation snapshot tb_monedero_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+Failure: Salida incorrecta -saldo
+Time: 20 us  Iteration: 0  Process: /tb_monedero/stimuli  File: C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd
+$finish called at time : 20 us : File "C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_monedero.vhd" Line 135
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1485.879 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 10 17:02:51 2023...

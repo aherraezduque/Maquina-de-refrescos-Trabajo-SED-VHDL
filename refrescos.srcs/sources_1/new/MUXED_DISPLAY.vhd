@@ -26,9 +26,7 @@ use IEEE.NUMERIC_STD.ALL;   --unsigned
 entity MUXED_DISPLAY is
     Port (
       CLK: in std_logic; --clk, needed for synchronization
-      --in3, in2, in1, in0: in std_logic_vector(6 downto 0); --7 segment inputs for each digit
       digito3, digito2, digito1, digito0: in std_logic_vector(6 downto 0); --7 segment inputs for each digit
-      --an: out std_logic_vector(3 downto 0); --digit selector
       digselector: out std_logic_vector(3 downto 0); --digit selector
       segmentos_ilum: out std_logic_vector(6 downto 0) --7 segments output, to show in the digit selected by "an"
      );
@@ -36,8 +34,8 @@ end MUXED_DISPLAY;
 
 architecture Behavioral of MUXED_DISPLAY is
     constant N: integer:= 18;           --con esto genero la tasa de refresco 
-    signal q_reg: unsigned(N-1 downto 0);
-    signal sel: std_logic_vector(1 downto 0); --signal to select the digit to enable
+    signal q_reg: unsigned(N-1 downto 0):=('0', others=>'0');
+    signal sel: std_logic_vector(1 downto 0):= "00"; --signal to select the digit to enable
 begin
 
 registr:   process(clk)

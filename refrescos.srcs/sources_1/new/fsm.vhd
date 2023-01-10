@@ -39,9 +39,9 @@ ARCHITECTURE behavioral of fsm is
     
     type STATES is (Inicio, Dinero, Un_euro, Devolucion, Producto);
     signal current_state: STATES := Inicio;
-    signal next_state: STATES;
+    signal next_state: STATES:= Inicio ;
     signal s_saldo: integer:= 0;
-    signal s_aviso: std_logic;
+    signal s_aviso: std_logic:= '0';
     signal producto_adquirido: std_logic;
 begin
 

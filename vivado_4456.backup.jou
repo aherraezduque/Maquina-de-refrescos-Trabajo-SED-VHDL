@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Jan 10 16:54:30 2023
+# Process ID: 4456
+# Current directory: C:/Users/alvar/Desktop/refrescos
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5704 C:\Users\alvar\Desktop\refrescos\refrescos.xpr
+# Log file: C:/Users/alvar/Desktop/refrescos/vivado.log
+# Journal file: C:/Users/alvar/Desktop/refrescos\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/alvar/Desktop/refrescos/refrescos.xpr
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_monedero.tcl
+close_sim
+launch_simulation
+source tb_monedero.tcl
+relaunch_sim
+relaunch_sim
+close_sim

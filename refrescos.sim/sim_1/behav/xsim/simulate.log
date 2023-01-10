@@ -1,4 +1,4 @@
 Time resolution is 1 ps
 Failure: Simulacion finalizada. Test superado.
-Time: 1 us  Iteration: 0  Process: /tb_BCD_DECODER/stimuli  File: C:/Proyectos_sed/refrescos/refrescos.srcs/sim_1/new/tb_BCD_DECODER.vhd
-$finish called at time : 1 us : File "C:/Proyectos_sed/refrescos/refrescos.srcs/sim_1/new/tb_BCD_DECODER.vhd" Line 137
+Time: 280 ns  Iteration: 0  Process: /tb_fsm/stimuli  File: C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_fsm.vhd
+$finish called at time : 280 ns : File "C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sim_1/new/tb_fsm.vhd" Line 171

@@ -40,7 +40,7 @@ entity BCD_DECODER is
     digito3: out std_logic_vector (6 downto 0);--unidades de millar  10 ^3
     digito2: out std_logic_vector (6 downto 0);--centenas            10 ^2   
     digito1: out std_logic_vector (6 downto 0);--decenas             10 ^1
-    digito0: out std_logic_vector (6 downto 0)); --unidades            10 ^0    
+    digito0: out std_logic_vector (6 downto 0)); --unidades          10 ^0    
 end BCD_DECODER;
 
 architecture Behavioral of BCD_DECODER is
@@ -51,10 +51,10 @@ conversion: process  (CLK,RESET)
        
         variable saldo: integer := SALDO_NUM;
         --Se pueden eliminar estas 4 variables
-        variable millares: integer:=0;
-        variable centenas: integer:=0;
-        variable decenas: integer:=0;
-        variable unidades: integer:=0;
+        --variable millares: integer:=0;
+        --variable centenas: integer:=0;
+        --variable decenas: integer:=0;
+        --variable unidades: integer:=0;
         
         --variable count :  INTEGER RANGE 0 TO clk_freq*stable_time/1000;  --counter for timing
         
@@ -64,7 +64,7 @@ conversion: process  (CLK,RESET)
         --centenas:= saldo /100;  saldo := saldo -(centenas *100);
         --decenas:= saldo /10;    saldo := saldo -(decenas *10);
         --unidades:= saldo;
-        
+        saldo:= SALDO_NUM;                          --Actualización del valor de la variable saldo, con el valor de la entrada SALDO_NUM          
         if RESET = '0' then 
             digito3<= "1111111";
             digito2<= "1111111";
@@ -99,27 +99,7 @@ conversion: process  (CLK,RESET)
             when others => digito1 <= "0000001";
             end case;
             
---            if AVISO_DEVOLUCION = '1' then          --señal de aviso devolucion   
---                --aviso_holder <= '1';                --ACTIVACIÓN DEL TOKEN
---                digito3<= "1111111";
---                digito2<= "0110000";
---                digito1<= "1111010";
---                digito0<= "1111010";
---            end if;                                 --fin aviso
---            if (aviso_holder ='1') then
---                count := count +1;
---            end if;
-            
-            
---            if ( aviso_holder ='1' AND (count = clk_freq*stable_time/1000)) then
---                aviso_holder<= '0';                 --se apaga el holder porque ha alcanzado el tiempo que queríamos mantener las luces de aviso
---                count:=0;  
---            elsif  (aviso_holder ='1' AND (count <clk_freq*stable_time/1000)) then 
---                digito3<= "1111111";
---                digito2<= "0110000";
---                digito1<= "1111010";
---                digito0<= "1111010";
---            end if;                                                                      
+--                                                                          
         end if;                                     --fin if clk
   
         end process;
