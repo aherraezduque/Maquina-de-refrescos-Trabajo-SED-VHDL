@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sim_1/new/tb_MUXED_DISPLAY.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_MUXED_DISPLAY'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyectos_sed/refrescos/refrescos.srcs/sim_1/new/tb_BCD_DECODER.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_BCD_DECODER'

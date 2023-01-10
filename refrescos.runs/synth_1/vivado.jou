@@ -2,11 +2,11 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Sun Jan  8 21:34:33 2023
-# Process ID: 12460
-# Current directory: C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.runs/synth_1
+# Start of session at: Tue Jan 10 16:15:26 2023
+# Process ID: 16808
+# Current directory: C:/Users/alvar/Desktop/refrescos/refrescos.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.runs/synth_1/top.vds
-# Journal file: C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.runs/synth_1\vivado.jou
+# Log file: C:/Users/alvar/Desktop/refrescos/refrescos.runs/synth_1/top.vds
+# Journal file: C:/Users/alvar/Desktop/refrescos/refrescos.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace

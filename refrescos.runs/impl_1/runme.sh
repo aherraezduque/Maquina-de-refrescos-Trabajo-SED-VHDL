@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.runs/impl_1'
+HD_PWD='C:/Users/alvar/Desktop/refrescos/refrescos.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

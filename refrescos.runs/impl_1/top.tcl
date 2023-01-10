@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.runs/impl_1/top.tcl"
+  variable script "C:/Users/alvar/Desktop/refrescos/refrescos.runs/impl_1/top.tcl"
   variable category "vivado_impl"
 }
 
@@ -127,8 +127,9 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 2
+  set_param synth.incrementalSynthesisCache C:/Users/alvar/Desktop/refrescos/.Xil/Vivado-408-DESKTOP-76GMPL4/incrSyn
   open_checkpoint top_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.cache/wt} [current_project]
+  set_property webtalk.parent_dir C:/Users/alvar/Desktop/refrescos/refrescos.cache/wt [current_project]
 set_property TOP top [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

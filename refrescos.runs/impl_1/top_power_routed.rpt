@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date             : Sun Jan  8 21:35:44 2023
+| Date             : Tue Jan 10 16:16:39 2023
 | Host             : DESKTOP-76GMPL4 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 5.544        |
+| Total On-Chip Power (W)  | 5.680        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 5.416        |
-| Device Static (W)        | 0.128        |
+| Dynamic (W)              | 5.551        |
+| Device Static (W)        | 0.129        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 59.7         |
-| Junction Temperature (C) | 50.3         |
+| Max Ambient (C)          | 59.1         |
+| Junction Temperature (C) | 50.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,17 +52,17 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic             |     1.368 |      539 |       --- |             --- |
-|   LUT as Logic          |     1.105 |      177 |     63400 |            0.28 |
-|   CARRY4                |     0.179 |       54 |     15850 |            0.34 |
-|   Register              |     0.077 |      207 |    126800 |            0.16 |
+| Slice Logic             |     0.910 |      527 |       --- |             --- |
+|   LUT as Logic          |     0.677 |      172 |     63400 |            0.27 |
+|   CARRY4                |     0.160 |       54 |     15850 |            0.34 |
+|   Register              |     0.067 |      206 |    126800 |            0.16 |
 |   BUFG                  |     0.006 |        1 |        32 |            3.13 |
 |   LUT as Shift Register |    <0.001 |        5 |     19000 |            0.03 |
-|   Others                |     0.000 |       42 |       --- |             --- |
-| Signals                 |     1.258 |      410 |       --- |             --- |
-| I/O                     |     2.790 |       28 |       210 |           13.33 |
-| Static Power            |     0.128 |          |           |                 |
-| Total                   |     5.544 |          |           |                 |
+|   Others                |     0.000 |       40 |       --- |             --- |
+| Signals                 |     0.981 |      401 |       --- |             --- |
+| I/O                     |     3.660 |       28 |       210 |           13.33 |
+| Static Power            |     0.129 |          |           |                 |
+| Total                   |     5.680 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     2.706 |       2.666 |      0.040 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.122 |       0.101 |      0.021 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.782 |       0.778 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     1.972 |       1.931 |      0.041 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.154 |       0.133 |      0.021 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     1.029 |       1.025 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -139,22 +139,21 @@ Table of Contents
 +---------------------------+-----------+
 | Name                      | Power (W) |
 +---------------------------+-----------+
-| top                       |     5.416 |
-|   Inst_bcd_decoder        |     0.009 |
-|   Inst_debouncer_p10c     |     0.108 |
-|   Inst_debouncer_p1_euro  |     0.116 |
-|   Inst_debouncer_p20c     |     0.093 |
-|   Inst_debouncer_p50c     |     0.096 |
-|   Inst_debouncer_p_rearme |     0.092 |
-|   Inst_edge_p10c          |     0.008 |
-|   Inst_edge_p1_euro       |     0.031 |
-|   Inst_edge_p20c          |     0.010 |
-|   Inst_edge_p50c          |     0.024 |
-|   Inst_edge_p_rearme      |     0.004 |
-|   Inst_fsm                |     1.896 |
-|     Inst_monedero         |     1.823 |
-|     LED_ERROR_reg         |     0.004 |
-|   Inst_muxed_display      |     0.090 |
+| top                       |     5.551 |
+|   Inst_bcd_decoder        |     0.011 |
+|   Inst_debouncer_p10c     |     0.092 |
+|   Inst_debouncer_p1_euro  |     0.098 |
+|   Inst_debouncer_p20c     |     0.092 |
+|   Inst_debouncer_p50c     |     0.122 |
+|   Inst_debouncer_p_rearme |     0.108 |
+|   Inst_edge_p10c          |     0.004 |
+|   Inst_edge_p1_euro       |     0.014 |
+|   Inst_edge_p20c          |     0.005 |
+|   Inst_edge_p50c          |     0.010 |
+|   Inst_edge_p_rearme      |     0.002 |
+|   Inst_fsm                |     1.196 |
+|     Inst_monedero         |     1.133 |
+|   Inst_muxed_display      |     0.089 |
 +---------------------------+-----------+
 
 

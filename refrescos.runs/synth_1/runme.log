@@ -17,142 +17,115 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16164
+INFO: [Synth 8-7075] Helper process launched with PID 7548
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:45]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/debounce.vhd:28' bound to instance 'Inst_debouncer_p10c' of component 'debounce' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:150]
-INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/debounce.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:53]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/debounce.vhd:28' bound to instance 'Inst_debouncer_p10c' of component 'debounce' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/debounce.vhd:39]
 	Parameter clk_freq bound to: 100000000 - type: integer 
 	Parameter stable_time bound to: 10 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/debounce.vhd:39]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/debounce.vhd:28' bound to instance 'Inst_debouncer_p20c' of component 'debounce' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:156]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/debounce.vhd:28' bound to instance 'Inst_debouncer_p50c' of component 'debounce' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:162]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/debounce.vhd:28' bound to instance 'Inst_debouncer_p1_euro' of component 'debounce' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:168]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/debounce.vhd:28' bound to instance 'Inst_debouncer_p_rearme' of component 'debounce' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:174]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Inst_synch_p10c' of component 'SYNCHRNZR' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:182]
-INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/SYNCHRNZR.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (2#1) [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/SYNCHRNZR.vhd:11]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Inst_synch_p20c' of component 'SYNCHRNZR' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:187]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Inst_synch_p50c' of component 'SYNCHRNZR' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:192]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Inst_synch_p1_euro' of component 'SYNCHRNZR' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:197]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Inst_synch_prearme' of component 'SYNCHRNZR' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:202]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'Inst_edge_p10c' of component 'EDGEDTCTR' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:209]
-INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/EDGEDTCTR.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (3#1) [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/EDGEDTCTR.vhd:11]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'Inst_edge_p20c' of component 'EDGEDTCTR' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:214]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'Inst_edge_p50c' of component 'EDGEDTCTR' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:219]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'Inst_edge_p1_euro' of component 'EDGEDTCTR' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:224]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'Inst_edge_p_rearme' of component 'EDGEDTCTR' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:229]
-	Parameter valor_p10C_fsm bound to: 10 - type: integer 
-	Parameter valor_p20C_fsm bound to: 20 - type: integer 
-	Parameter valor_p50C_fsm bound to: 50 - type: integer 
-	Parameter valor_p1_euro_fsm bound to: 100 - type: integer 
-	Parameter valor_productos_fsm bound to: 100 - type: integer 
-	Parameter valor_inicio_fsm bound to: 0 - type: integer 
-	Parameter numero_de_productos_fsm bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'fsm' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/fsm.vhd:46' bound to instance 'Inst_fsm' of component 'fsm' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:236]
-INFO: [Synth 8-638] synthesizing module 'fsm' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/fsm.vhd:73]
-	Parameter valor_p10C_fsm bound to: 10 - type: integer 
-	Parameter valor_p20C_fsm bound to: 20 - type: integer 
-	Parameter valor_p50C_fsm bound to: 50 - type: integer 
-	Parameter valor_p1_euro_fsm bound to: 100 - type: integer 
-	Parameter valor_productos_fsm bound to: 100 - type: integer 
-	Parameter valor_inicio_fsm bound to: 0 - type: integer 
-	Parameter numero_de_productos_fsm bound to: 4 - type: integer 
-	Parameter valor_p10C bound to: 10 - type: integer 
-	Parameter valor_p20C bound to: 20 - type: integer 
-	Parameter valor_p50C bound to: 50 - type: integer 
-	Parameter valor_p1_euro bound to: 100 - type: integer 
-	Parameter valor_productos bound to: 100 - type: integer 
-	Parameter valor_inicio bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'monedero' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/monedero.vhd:25' bound to instance 'Inst_monedero' of component 'monedero' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/fsm.vhd:110]
-INFO: [Synth 8-638] synthesizing module 'monedero' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/monedero.vhd:47]
-	Parameter valor_p10C bound to: 10 - type: integer 
-	Parameter valor_p20C bound to: 20 - type: integer 
-	Parameter valor_p50C bound to: 50 - type: integer 
-	Parameter valor_p1_euro bound to: 100 - type: integer 
-	Parameter valor_productos bound to: 100 - type: integer 
-	Parameter valor_inicio bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'monedero' (4#1) [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/monedero.vhd:47]
-WARNING: [Synth 8-614] signal 'p10C' is read in the process but is not in the sensitivity list [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/fsm.vhd:140]
-WARNING: [Synth 8-614] signal 'p20C' is read in the process but is not in the sensitivity list [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/fsm.vhd:140]
-WARNING: [Synth 8-614] signal 'p50C' is read in the process but is not in the sensitivity list [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/fsm.vhd:140]
-WARNING: [Synth 8-614] signal 'p1_euro' is read in the process but is not in the sensitivity list [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/fsm.vhd:140]
-WARNING: [Synth 8-614] signal 's_saldo' is read in the process but is not in the sensitivity list [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/fsm.vhd:140]
-WARNING: [Synth 8-614] signal 's_aviso' is read in the process but is not in the sensitivity list [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/fsm.vhd:140]
-WARNING: [Synth 8-614] signal 'p_rearme' is read in the process but is not in the sensitivity list [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/fsm.vhd:140]
-INFO: [Synth 8-256] done synthesizing module 'fsm' (5#1) [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/fsm.vhd:73]
-INFO: [Synth 8-3491] module 'BCD_DECODER' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/BCD_DECODER.vhd:28' bound to instance 'Inst_bcd_decoder' of component 'BCD_DECODER' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:261]
-INFO: [Synth 8-638] synthesizing module 'BCD_DECODER' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/BCD_DECODER.vhd:41]
-WARNING: [Synth 8-614] signal 'SALDO_NUM' is read in the process but is not in the sensitivity list [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/BCD_DECODER.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'BCD_DECODER' (6#1) [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/BCD_DECODER.vhd:41]
-INFO: [Synth 8-3491] module 'MUXED_DISPLAY' declared at 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/MUXED_DISPLAY.vhd:26' bound to instance 'Inst_muxed_display' of component 'MUXED_DISPLAY' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:271]
-INFO: [Synth 8-638] synthesizing module 'MUXED_DISPLAY' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/MUXED_DISPLAY.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'MUXED_DISPLAY' (7#1) [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/MUXED_DISPLAY.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'top' (8#1) [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/top.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/debounce.vhd:39]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/debounce.vhd:28' bound to instance 'Inst_debouncer_p20c' of component 'debounce' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:160]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/debounce.vhd:28' bound to instance 'Inst_debouncer_p50c' of component 'debounce' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:166]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/debounce.vhd:28' bound to instance 'Inst_debouncer_p1_euro' of component 'debounce' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:172]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/debounce.vhd:28' bound to instance 'Inst_debouncer_p_rearme' of component 'debounce' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:178]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synch_p10c' of component 'SYNCHRNZR' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/SYNCHRNZR.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (2#1) [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/SYNCHRNZR.vhd:10]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synch_p20c' of component 'SYNCHRNZR' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:190]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synch_p50c' of component 'SYNCHRNZR' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:195]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synch_p1_euro' of component 'SYNCHRNZR' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:200]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/SYNCHRNZR.vhd:3' bound to instance 'Inst_synch_prearme' of component 'SYNCHRNZR' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:205]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edge_p10c' of component 'EDGEDTCTR' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/EDGEDTCTR.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (3#1) [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/EDGEDTCTR.vhd:10]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edge_p20c' of component 'EDGEDTCTR' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:216]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edge_p50c' of component 'EDGEDTCTR' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:221]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edge_p1_euro' of component 'EDGEDTCTR' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:226]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/EDGEDTCTR.vhd:3' bound to instance 'Inst_edge_p_rearme' of component 'EDGEDTCTR' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:231]
+INFO: [Synth 8-3491] module 'fsm' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/fsm.vhd:5' bound to instance 'Inst_fsm' of component 'fsm' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:237]
+INFO: [Synth 8-638] synthesizing module 'fsm' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/fsm.vhd:24]
+INFO: [Synth 8-3491] module 'monedero' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/monedero.vhd:33' bound to instance 'Inst_monedero' of component 'monedero' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/fsm.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'monedero' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/monedero.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'monedero' (4#1) [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/monedero.vhd:47]
+WARNING: [Synth 8-614] signal 's_saldo' is read in the process but is not in the sensitivity list [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/fsm.vhd:69]
+WARNING: [Synth 8-614] signal 'p10C' is read in the process but is not in the sensitivity list [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/fsm.vhd:69]
+WARNING: [Synth 8-614] signal 'p20C' is read in the process but is not in the sensitivity list [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/fsm.vhd:69]
+WARNING: [Synth 8-614] signal 'p50C' is read in the process but is not in the sensitivity list [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/fsm.vhd:69]
+WARNING: [Synth 8-614] signal 'p1_euro' is read in the process but is not in the sensitivity list [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/fsm.vhd:69]
+WARNING: [Synth 8-614] signal 's_aviso' is read in the process but is not in the sensitivity list [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/fsm.vhd:69]
+WARNING: [Synth 8-614] signal 'p_rearme' is read in the process but is not in the sensitivity list [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/fsm.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'fsm' (5#1) [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/fsm.vhd:24]
+INFO: [Synth 8-3491] module 'BCD_DECODER' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/BCD_DECODER.vhd:29' bound to instance 'Inst_bcd_decoder' of component 'BCD_DECODER' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:255]
+INFO: [Synth 8-638] synthesizing module 'BCD_DECODER' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/BCD_DECODER.vhd:46]
+WARNING: [Synth 8-614] signal 'SALDO_NUM' is read in the process but is not in the sensitivity list [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/BCD_DECODER.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'BCD_DECODER' (6#1) [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/BCD_DECODER.vhd:46]
+INFO: [Synth 8-3491] module 'MUXED_DISPLAY' declared at 'C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/MUXED_DISPLAY.vhd:26' bound to instance 'Inst_muxed_display' of component 'MUXED_DISPLAY' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:268]
+INFO: [Synth 8-638] synthesizing module 'MUXED_DISPLAY' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/MUXED_DISPLAY.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'MUXED_DISPLAY' (7#1) [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/MUXED_DISPLAY.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'top' (8#1) [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/top.vhd:53]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1165.008 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/Nexys4DDR_Master.xdc]
-Finished Parsing XDC File [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/Nexys4DDR_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [C:/Users/alvar/Desktop/refrescos/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/alvar/Desktop/refrescos/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/alvar/Desktop/refrescos/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1165.008 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'fsm'
-WARNING: [Synth 8-327] inferring latch for variable 'LIGHT_reg' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/fsm.vhd:195]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
                   inicio |                              000 |                              000
                   dinero |                              001 |                              001
                  un_euro |                              010 |                              010
-              devolucion |                              011 |                              011
-                producto |                              100 |                              100
+                producto |                              011 |                              100
+              devolucion |                              100 |                              011
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'fsm'
-WARNING: [Synth 8-327] inferring latch for variable 'LED_SALIDA_PRODUCTO_reg' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/fsm.vhd:196]
-WARNING: [Synth 8-327] inferring latch for variable 'LED_ERROR_reg' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/fsm.vhd:197]
-WARNING: [Synth 8-327] inferring latch for variable 'producto_adquirido_reg' [C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.srcs/sources_1/new/fsm.vhd:126]
+WARNING: [Synth 8-327] inferring latch for variable 'LIGHT_reg' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/fsm.vhd:120]
+WARNING: [Synth 8-327] inferring latch for variable 'LED_ERROR_reg' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/fsm.vhd:131]
+WARNING: [Synth 8-327] inferring latch for variable 'producto_adquirido_reg' [C:/Users/alvar/Desktop/refrescos/refrescos.srcs/sources_1/new/fsm.vhd:55]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -177,10 +150,9 @@ Detailed RTL Component Info :
 	   4 Input    4 Bit        Muxes := 1     
 	   5 Input    3 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 3     
-	   2 Input    1 Bit        Muxes := 13    
-	   3 Input    1 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 12    
+	   3 Input    1 Bit        Muxes := 3     
 	   5 Input    1 Bit        Muxes := 3     
-	   4 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -197,25 +169,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -233,37 +205,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -299,47 +271,47 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |    54|
-|3     |LUT1   |     8|
-|4     |LUT2   |    60|
-|5     |LUT3   |    78|
-|6     |LUT4   |    40|
-|7     |LUT5   |     9|
-|8     |LUT6   |    33|
+|3     |LUT1   |     9|
+|4     |LUT2   |    57|
+|5     |LUT3   |    77|
+|6     |LUT4   |    37|
+|7     |LUT5   |     7|
+|8     |LUT6   |    34|
 |9     |SRL16E |     5|
-|10    |FDCE   |    50|
+|10    |FDCE   |    49|
 |11    |FDPE   |     9|
-|12    |FDRE   |   140|
+|12    |FDRE   |   141|
 |13    |FDSE   |     4|
 |14    |LD     |     1|
-|15    |LDC    |     2|
-|16    |LDCP   |     1|
+|15    |LDC    |     1|
+|16    |LDP    |     1|
 |17    |IBUF   |    11|
 |18    |OBUF   |    17|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1165.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1171.191 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1165.008 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1165.008 ; gain = 0.000
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1171.191 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 58 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1165.008 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1171.191 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1165.008 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4 instances were transformed.
+  A total of 3 instances were transformed.
   LD => LDCE: 1 instance 
-  LDC => LDCE: 2 instances
-  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 1 instance 
+  LDC => LDCE: 1 instance 
+  LDP => LDPE: 1 instance 
 
-Synth Design complete, checksum: 59af5d30
+Synth Design complete, checksum: b8aa151b
 INFO: [Common 17-83] Releasing license: Synthesis
-52 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+52 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1171.191 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.runs/synth_1/top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1165.008 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alvar/Desktop/refrescos/refrescos.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jan  8 21:34:55 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 10 16:15:49 2023...

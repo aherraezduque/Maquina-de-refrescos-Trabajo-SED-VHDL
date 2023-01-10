@@ -2,12 +2,24 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Sun Jan  8 13:22:10 2023
-# Process ID: 7076
-# Current directory: C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent880 C:\Users\alvar\Documents\GitHub\Maquina de refrescos-VHDL\Maquina-de-refrescos-Trabajo-SED-VHDL\refrescos.xpr
-# Log file: C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/vivado.log
-# Journal file: C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL\vivado.jou
+# Start of session at: Tue Jan 10 16:11:29 2023
+# Process ID: 408
+# Current directory: C:/Users/alvar/Desktop/refrescos
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3828 C:\Users\alvar\Desktop\refrescos\refrescos.xpr
+# Log file: C:/Users/alvar/Desktop/refrescos/vivado.log
+# Journal file: C:/Users/alvar/Desktop/refrescos\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/alvar/Documents/GitHub/Maquina de refrescos-VHDL/Maquina-de-refrescos-Trabajo-SED-VHDL/refrescos.xpr}
+open_project C:/Users/alvar/Desktop/refrescos/refrescos.xpr
+export_ip_user_files -of_objects  [get_files C:/Proyectos_sed/Nexys4DDR_Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Proyectos_sed/Nexys4DDR_Master.xdc
+add_files -fileset constrs_1 -norecurse C:/Users/alvar/Desktop/refrescos/Nexys4DDR_Master.xdc
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
